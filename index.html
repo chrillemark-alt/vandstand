@@ -895,10 +895,12 @@ function pHus(L,p,s,thr,sig){const sL=Math.sqrt(sig*sig+SIG_LAG*SIG_LAG);let P=0
 // Prognosefejl uden ensemble: modellens egen fejl 0,15 m plus vejrprognosens fejl, målt pr. ledetid på arkiverede ECMWF-prognoser 2024 til 2026 (kalibrering v21).
 const SIGV=[[0,0],[24,.03],[48,.07],[72,.09],[96,.12],[120,.15],[144,.24],[168,.32]];
 function sigStat(T){T=Math.max(0,T||0);let g=SIGV[SIGV.length-1][1];for(let i=1;i<SIGV.length;i++){if(T<=SIGV[i][0]){const a=SIGV[i-1],b=SIGV[i];g=a[1]+(b[1]-a[1])*(T-a[0])/(b[0]-a[0]);break}}return Math.min(0.40,Math.sqrt(.0225+g*g))}
-function meaningOf(tot){
-  if(tot>=2.0) return "Forventet vandstand: vand inde i huset.";
-  if(tot>=1.7) return "Forventet vandstand: ved sokkel og døre.";
-  if(tot>=1.4) return "Forventet vandstand: i den nederste del af haven.";
+function meaningOf(tot,eff){
+  if(eff>=2.10) return "Forventet vandstand: vand inde i huset.";
+  if(tot>=2.10) return "Forventet vandstand: over soklen, bølgerne kan nå dørtærsklen.";
+  if(tot>=1.7) return "Forventet vandstand: ved soklen, under dørtærsklen.";
+  if(tot>=1.57) return "Forventet vandstand: i haven, under soklen.";
+  if(tot>=1.4) return "Forventet vandstand: på markerne ved siden af huset.";
   if(tot>=0.8) return "Forventet vandstand: ved kystsikring og strand.";
   return "Forventet vandstand: normal.";
 }
@@ -992,7 +994,7 @@ function calc(){
   $("riskNum").innerHTML=Math.round(m.idx)+"<small> %</small>";
   $("riskNum").style.color=L.c;
   $("chip").textContent=L.l; $("chip").style.background=L.c;
-  $("meaning").textContent=L.m+" "+(site==="N"?`Nysted: oversvømmelsesgrad ${Math.round(m.grad)} % (stillevand ${f(m.still)} m / kote ${n(m.thr)} m)`+(m.grad>=100?", byen står under vand.":"."):meaningOf(m.tot));
+  $("meaning").textContent=L.m+" "+(site==="N"?`Nysted: oversvømmelsesgrad ${Math.round(m.grad)} % (stillevand ${f(m.still)} m / kote ${n(m.thr)} m)`+(m.grad>=100?", byen står under vand.":"."):meaningOf(m.tot,m.eff));
   $("action").textContent=L.a; $("action").style.borderColor=L.c;
   {const br=$("bRisk");br.textContent=`Risiko for huset: ${Math.round(mS.idx)} % ${level(mS.idx).l}`;br.style.background=level(mS.idx).c;br.style.color=level(mS.idx).l==="GUL"?"#1b1b1b":"#fff"}
   {const sw=$("simWhen");const on=mode==="sim"&&curScen&&SNAME[curScen];sw.hidden=!on;if(on)sw.textContent=SNAME[curScen]}
