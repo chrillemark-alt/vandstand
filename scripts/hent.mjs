@@ -19,7 +19,7 @@ const raw={},status={};
 for(const [k,u] of Object.entries(U)){raw[k]=await hent(k,u);status[k]=raw[k]?"ok":"mangler";await sleep(1500)}
 // Behold sidste gode DKSS, hvis DMI ikke svarer, men marker alderen.
 let old=null;try{old=JSON.parse(readFileSync("data/latest.json","utf8"))}catch(e){}
-const at={};for(const k in U)at[k]=raw[k]?now:(old&&old.at&&old.at[k])||null;
+const tid=Date.now(),at={};for(const k in U)at[k]=raw[k]?tid:(old&&old.at&&old.at[k])||null;
 for(const k in U)if(!raw[k]&&old&&old.raw&&old.raw[k])raw[k]=old.raw[k];
 mkdirSync("data",{recursive:true});
 writeFileSync("data/latest.json",JSON.stringify({made:Date.now(),at,status,raw}));
