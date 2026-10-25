@@ -487,7 +487,7 @@ a{color:var(--sea)}
 <!-- STUBBERUP VS NYSTED -->
 <section aria-label="Stubberup og Nysted">
   <h2>Stubberup og Nysted</h2>
-  <p>Vandet står omtrent lige højt i Nysted og ved Stubberup. Forskellen er, hvor højt det skal op: Nysted havn går under vand ved ca. 1,10 m over daglig vandstand, huset står på en sokkel af kampesten i 1,70 m over daglig vandstand, og markerne ved siden af tager toppen af vandet. Kystdirektoratets kortlægning (plantrin 2) har ikke udpeget Stubberup som risikoområde.</p>
+  <p>Vandet står omtrent lige højt i Nysted og ved Stubberup. Forskellen er, hvor højt det skal op: Nysted havn går under vand ved ca. 1,10 m over daglig vandstand, huset står på en sokkel af kampesten i 1,70 m over daglig vandstand. Kystdirektoratets kortlægning (plantrin 2) har ikke udpeget Stubberup som risikoområde.</p>
   <div class="bigstat">
     <div style="background:color-mix(in srgb,var(--alert) 16%,transparent)"><span class="eyebrow">Nysted havn under vand</span><b>27 gange</b><span>siden 1940</span></div>
     <div style="background:color-mix(in srgb,var(--ok) 16%,transparent)"><span class="eyebrow">Vand ved huset</span><b>0 gange</b><span>siden 1940</span></div>
@@ -496,16 +496,16 @@ a{color:var(--sea)}
     <span class="eyebrow">Stubberup ligger bedre</span>
     <ol>
       <li><b>Lagunen ligger i læ.</b> Gedser ligger ved åbent hav. Rødsand-revlen holder en del af stormfloden ude, så lagunen står lavere: øjenvidner målte ca. 1,5 m i Nysted. Modellen regner med 20 cm under Gedser.</li>
-      <li><b>Markerne tager toppen.</b> Når vandet står mere end 1,30 m over daglig vandstand, løber det ud over de flade marker ved siden af huset. Derefter giver hver centimeter i lagunen kun ca. 0,6 cm ved huset.</li>
+      <li><b>Huset ligger højt på grunden.</b> Danmarks Højdemodel viser, at det laveste terræn ved huset ligger 1,70 m over daglig vandstand, og at haven ned mod lagunen ligger 1,57 til 1,66 m. Det var her, vandet stod i 2023, mere end 15 m fra huset.</li>
     </ol>
   </div>
   <div class="cmp">
     <div class="panel" style="background:color-mix(in srgb,var(--alert) 16%,var(--paper))"><span class="eyebrow">Nysted havn</span>
       <div class="kv"><span>Gedser vandstand</span><span>+2,00 m</span><span>Havn vandstand</span><span>ca. 1,80 m</span><span>Havnen (1,10 m)</span><span><b style="color:var(--crit)">+70 cm over</b></span></div></div>
     <div class="panel" style="background:color-mix(in srgb,var(--ok) 16%,var(--paper))"><span class="eyebrow">Stubberup (huset)</span>
-      <div class="kv"><span>Gedser vandstand</span><span>+2,00 m</span><span>Hus vandstand</span><span>ca. 1,75 m inkl. skvulp</span><span>Dørtærsklen (2,10 m)</span><span><b style="color:var(--ok)">−35 cm under</b></span></div></div>
+      <div class="kv"><span>Gedser vandstand</span><span>+2,00 m</span><span>Hus vandstand</span><span>ca. 1,90 m inkl. skvulp</span><span>Dørtærsklen (2,10 m)</span><span><b style="color:var(--ok)">−20 cm under</b></span></div></div>
   </div>
-  <p class="muted">Eksempel: Gedser 2,00 m over daglig vandstand, højere end nogen måling siden 1891. Lagunen står ca. 20 cm lavere, så Nysted havn står 70 cm under vand. Ved huset tager markerne toppen: vandet når lige soklen (1,70 m) med bølgeskvulp, men er 35 cm fra at komme ind over dørtærsklen.</p>
+  <p class="muted">Eksempel: Gedser 2,00 m over daglig vandstand, højere end nogen måling siden 1891. Lagunen står ca. 20 cm lavere, så Nysted havn står 70 cm under vand. Ved huset står vandet 20 cm op ad soklen (1,70 m) med bølgeskvulp, men er 20 cm fra at komme ind over dørtærsklen.</p>
 </section>
 
 
@@ -613,7 +613,7 @@ a{color:var(--sea)}
     <p class="hint" id="dirhint"></p>
     <div class="ctl">
       <label for="zM">Markernes kote (Børge Leo) <output id="ozM"></output></label>
-      <input id="zM" type="range" min="1.0" max="1.6" step="0.05" value="1.30">
+      <input id="zM" type="range" min="1.0" max="1.7" step="0.05" value="1.40">
       
     </div>
     <div class="ctl">
@@ -634,10 +634,10 @@ a{color:var(--sea)}
     <span class="eyebrow">Vandstande, meter over daglig vandstand</span>
     <div class="lr"><span class="lb">Stormfloden 1872</span><span class="lv">over 3 m</span><span class="bar"><i style="width:100%;background:var(--crit2)"></i></span><span class="sub">Nysted og Stubberup under vand.</span></div>
     <div class="lr house"><span class="lb">Vand inde i huset</span><span class="lv">ca. 2,1 m</span><span class="bar"><i style="width:70%;background:var(--crit2)"></i></span><span class="sub">Over kampestenssoklen og dørtærsklen.</span></div>
-    <div class="lr"><span class="lb">Stormfloden 1913</span><span class="lv">ca. 1,69 m</span><span class="bar"><i style="width:56%;background:var(--crit)"></i></span><span class="sub">Gedser +1,93 m, højest målt siden 1891. Ved huset beregnet.</span></div>
+    <div class="lr"><span class="lb">Stormfloden 1913</span><span class="lv">ca. 1,79 m</span><span class="bar"><i style="width:60%;background:var(--crit)"></i></span><span class="sub">Gedser +1,93 m, højest målt siden 1891. Ved huset beregnet med bølgeskvulp.</span></div>
     <div class="lr house"><span class="lb">Vand ved soklen (kampesten)</span><span class="lv">1,70 m</span><span class="bar"><i style="width:57%;background:var(--crit)"></i></span><span class="sub">Her regnes risikoen øverst fra.</span></div>
-    <div class="lr"><span class="lb">Oktober 2023</span><span class="lv">ca. 1,61 m</span><span class="bar"><i style="width:53%;background:var(--alert)"></i></span><span class="sub">Gedser +1,84 m. Ved huset beregnet; vand på markerne og i haven.</span></div>
-    <div class="lr"><span class="lb">Markerne ved siden af huset</span><span class="lv">1,30 m</span><span class="bar"><i style="width:43%;background:var(--warn)"></i></span><span class="sub">Vandet løber ud på markerne (Børge Leo).</span></div>
+    <div class="lr"><span class="lb">Oktober 2023</span><span class="lv">ca. 1,66 m</span><span class="bar"><i style="width:55%;background:var(--alert)"></i></span><span class="sub">Gedser +1,84 m. Ved huset beregnet med bølgeskvulp; vandet stod i haven mere end 15 m fra huset.</span></div>
+    <div class="lr"><span class="lb">Markerne ved siden af huset</span><span class="lv">1,40 m</span><span class="bar"><i style="width:47%;background:var(--warn)"></i></span><span class="sub">Vandet løber ud på markerne (Børge Leo; koten fra Danmarks Højdemodel).</span></div>
     <div class="lr"><span class="lb">Nysted havn og Havnegade</span><span class="lv">ca. 1,10 m</span><span class="bar"><i style="width:37%;background:var(--warn)"></i></span></div>
     <div class="lr"><span class="lb">Stubberup havn, laveste sted</span><span class="lv">ca. 1,05 m</span><span class="bar"><i style="width:35%;background:var(--warn)"></i></span><span class="sub">Vandet når op på vejen, hvor Povl lægger sin sten (anslået).</span></div>
     <div class="lr"><span class="lb">Fortøjninger slækkes, stropper løsnes</span><span class="lv">0,80 m</span><span class="bar"><i style="width:27%;background:var(--ok)"></i></span></div>
@@ -687,7 +687,7 @@ a{color:var(--sea)}
     <ul class="lim">
       <li>DKSS kan ikke testes bagud, fordi gamle prognoser ikke er offentlige.</li>
       <li>Den statistiske model er trænet med kendt vind; usikker prognosevind dækkes af spredningen i 51 vejrprognoser fra ECMWF; efter ca. 5 døgn, hvor de slutter, bruges et skøn.</li>
-      <li>Skvulp, de 20 cm mellem Gedser og lagunen, markernes kote og dæmpning er ikke målt, men tilpasset iagttagelserne i 2019 og 2023.</li>
+      <li>Skvulp og de 20 cm mellem Gedser og lagunen er ikke målt. Koterne for huset, haven og markerne er målt i Danmarks Højdemodel (ca. ±5 cm). Dørtærsklen er skønnet fra et foto.</li>
       <li>Fortøjningsgrænsen bruger Nysted-vandstanden som havnens vandstand.</li>
       <li>DMI's stormflodsvarsler går altid forud for denne model.</li>
     </ul>
@@ -697,7 +697,7 @@ a{color:var(--sea)}
       <li><b>Testet på år, den ikke har set.</b> Trænet på 1960–1997 og testet på 1998–2026, og omvendt. Toppen af høje vande i Gedser rammes typisk med ca. 15 cm fejl, de største stormfloder med ca. 26 cm.</li>
       <li><b>Varsler.</b> Af de dage, hvor Gedser når over 1,0 m, varsler modellen ca. 4 ud af 5. Omkring hver 4. alarm er falsk.</li>
       <li><b>Usikkerheden.</b> Procenten regnes med en usikkerhed (σ). Den består af modellens egen fejl (ca. 15 cm) og usikkerheden i vejret. Vejret tager vi fra ECMWF, det europæiske vejrcenter, der kører den samme vejrprognose 51 gange med små forskelle i starten (et ensemble). Jo mere de 51 prognoser er uenige om vinden, jo større er usikkerheden. Efter ca. 5 døgn, hvor ensemblet slutter, bruger vi den fejl, vores model faktisk havde på arkiverede vejrprognoser 2024 til 2026: ca. 3 cm ekstra efter 1 døgn, 9 cm efter 3 døgn og 32 cm efter 7 døgn. Ensemblet er kun kontrolleret teknisk: om usikkerheden har den rigtige størrelse i stormvejr, kan endnu ikke efterprøves, fordi ensembleprognoser kun er gemt siden juli 2026.</li>
-      <li><b>Usikkerheden ved huset.</b> Afstanden fra Gedser til lagunen og husets og markernes koter er ikke målt. Derfor regnes procenten ved huset med 10 cm ekstra usikkerhed i lagunen og 12 cm ved huset. Prognosens usikkerhed føres gennem markerne, så den dæmpes, hvor markerne tager vandet.</li>
+      <li><b>Usikkerheden ved huset.</b> Afstanden fra Gedser til lagunen er ikke målt. Derfor regnes procenten ved huset med 10 cm ekstra usikkerhed i lagunen og 6 cm ved huset for terrænets nøjagtighed og skvulpet.</li>
       <li><b>Løbende efterprøvning.</b> Fra oktober 2026 gemmer vi hver morgen DMI's og vores egen prognose og sammenligner med det, Gedser faktisk måler. Når der er data nok, viser vi her, hvor godt de to ramte.</li>
       <li><b>Testet og fravalgt.</b> Lufttryk som ekstra input forbedrede ikke modellen (under 1 cm). En løbende rettelse efter Gedser-målingen gjorde toppen 1 cm dårligere.</li>
       <li><b>Indført.</b> Beslutningstræerne gav færre falske alarmer (22 → 16 og 18 → 17 i de to testperioder) og lidt mindre fejl på de største stormfloder (28 → 26 cm).</li>
@@ -742,14 +742,14 @@ a{color:var(--sea)}
   </div>
 
   <div class="step">
-    <h3>4b. Markerne (kun Stubberup)</h3>
-    <p>Over markernes kote Z = 1,30 m giver hver centimeter i lagunen 0,6 cm ved huset, indtil markerne er fyldt (Z + 0,60 m). Børge Leo-indekset er risikoen for, at lagunen når Z.</p>
+    <h3>4b. Haven og markerne (kun Stubberup)</h3>
+    <p>Koterne er målt i Danmarks Højdemodel. Haven går direkte ned til lagunen, så vandet ved huset står lige så højt som i lagunen. Markerne ligger ved siden af huset og får vand, når lagunen når Z = 1,40 m. Børge Leo-indekset er risikoen for, at lagunen når Z.</p>
     <div class="math" id="m4b"></div>
   </div>
 
   <div class="step">
     <h3>5. Bølger og skvulp</h3>
-    <p>Bølgehøjden fra lavvandsformlen i Coastal Engineering Manual, begrænset af fetch og dybde. Skvulp = 0,8 × bølgehøjden. Over markerne brydes bølgerne, så skvulpet ved huset højst er halvdelen af vanddybden på markerne og 0, når vandet står under dem. Fetch og dybde fra EMODnet: ca. 1 km åbent vand fra øst–sydøst (60–135°), ca. 8 km fra syd–sydvest (135–255°), dybde 1,1–2,4 m.</p>
+    <p>Bølgehøjden fra lavvandsformlen i Coastal Engineering Manual, begrænset af fetch og dybde. Skvulp = 0,8 × bølgehøjden. I haven brydes bølgerne, så skvulpet ved huset højst er halvdelen af vanddybden i haven (1,60 m) og 0, når vandet står under den. Fetch og dybde fra EMODnet: ca. 1 km åbent vand fra øst–sydøst (60–135°), ca. 8 km fra syd–sydvest (135–255°), dybde 1,1–2,4 m.</p>
     <div class="math" id="m5"></div>
   </div>
 
@@ -775,17 +775,17 @@ a{color:var(--sea)}
         <tr><td>c<sub>v</sub></td><td>Prognosevind → historisk niveau</td><td class="n tw">0,87 / 0,95 / 0,92 / 1,00</td><td><span class="tag cal">Kalibreret 2022–26</span></td></tr>
         <tr><td>σ<sub>0</sub></td><td>Usikkerhed, statistisk model</td><td class="n tw">0,15 m + vækst 0,03 / 0,09 / 0,32 m efter 1 / 3 / 7 døgn</td><td><span class="tag cal">σ₀ kalibreret</span> <span class="tag cal">vækst målt 2024–2026</span></td></tr>
         <tr><td>σ<sub>lagune</sub></td><td>Ekstra usikkerhed i lagunen (afstand til Gedser og DKSS)</td><td class="n">0,10 m</td><td><span class="tag ass">Skøn, indtil lagunen er målt</span></td></tr>
-        <tr><td>σ<sub>lokal</sub></td><td>Ekstra usikkerhed ved huset (koter, markerne, skvulp)</td><td class="n">0,12 m</td><td><span class="tag ass">Skøn, indtil koterne er målt</span></td></tr>
+        <tr><td>σ<sub>lokal</sub></td><td>Ekstra usikkerhed ved huset (terræn, skvulp)</td><td class="n">0,06 m</td><td><span class="tag cal">Terræn målt (Danmarks Højdemodel)</span></td></tr>
         <tr><td>σ<sub>DKSS</sub></td><td>Usikkerhed, DMI's prognose</td><td class="n tw">0,10 + 0,0025·T m</td><td><span class="tag ass">Skøn, kan ikke testes bagud</span></td></tr>
         <tr><td>Δ</td><td>Lagunen under Gedser</td><td class="n">0,20 m</td><td><span class="tag ass">Antagelse, kan tjekkes mod DKSS</span></td></tr>
         <tr><td>k<sub>N</sub></td><td>Nysted ift. lagunen</td><td class="n">× 1,00 (±15 cm)</td><td><span class="tag cal">Øjenvidner 1946 og 2023</span></td></tr>
         <tr><td>Z<sub>N</sub></td><td>Nysted havn oversvømmes</td><td class="n">1,10 m</td><td><span class="tag cal">7 øjenvidne-år, Gedser ≥ 1,28 m</span></td></tr>
-        <tr><td>Z</td><td>Markernes kote (Børge Leo)</td><td class="n">1,30 m</td><td><span class="tag cal">Afgrænset af 2019 og 2023</span></td></tr>
-        <tr><td>k<sub>m</sub></td><td>Stigning ved huset over Z</td><td class="n tw">0,60 (op til Z + 0,60)</td><td><span class="tag cal">Tilpasset: 2023 tørt ved huset</span></td></tr>
+        <tr><td>Z</td><td>Markernes kote (Børge Leo)</td><td class="n">1,40 m</td><td><span class="tag cal">Målt (Danmarks Højdemodel), passer med 2019</span></td></tr>
+        <tr><td>Z<sub>have</sub>, Z<sub>hus</sub></td><td>Haven mod lagunen, laveste terræn ved huset</td><td class="n tw">1,60 m / 1,70 m</td><td><span class="tag cal">Målt (Danmarks Højdemodel)</span></td></tr>
         <tr><td>d₀</td><td>Lagunedybde</td><td class="n">1,5 m</td><td><span class="tag cal">Verificeret, EMODnet 1,1–2,4 m</span></td></tr>
         <tr><td>F</td><td>Fetch, Stubberup</td><td class="n tw">1 km (60–135°), 8 km (135–255°)</td><td><span class="tag cal">Verificeret, EMODnet</span></td></tr>
         <tr><td>F<sub>N</sub></td><td>Fetch, Nysted Nor</td><td class="n">1,5 / 0,5 km</td><td><span class="tag ass">Antagelse</span></td></tr>
-        <tr><td>c<sub>s</sub></td><td>Skvulp = c<sub>s</sub> · Hs, ved huset højst halvdelen af vanddybden på markerne</td><td class="n">0,80</td><td><span class="tag ass">Fysisk skøn (0,5–1,0)</span></td></tr>
+        <tr><td>c<sub>s</sub></td><td>Skvulp = c<sub>s</sub> · Hs, ved huset højst halvdelen af vanddybden i haven</td><td class="n">0,80</td><td><span class="tag ass">Fysisk skøn (0,5–1,0)</span></td></tr>
         <tr><td>β, α, θ</td><td>Simulationens enkle formel</td><td class="n tw">0,0027 / 0,36 / 120°/105°</td><td><span class="tag spec">Kun simulation</span></td></tr>
       </tbody>
     </table></div>
@@ -804,10 +804,10 @@ a{color:var(--sea)}
         <tr><td>Havniveau før (Gedser, 17.10)</td><td class="n">+0,34 m</td></tr>
         <tr><td>Helsinki max 72 t før omsving</td><td class="n">+0,59 m</td></tr>
         <tr><td>Vind 6-t max, Fehmarn Bælt</td><td class="n">21,6 m/s fra 90°</td></tr>
-        <tr><td>Model Stubberup</td><td class="n tw">1,64 lagune → 1,51 (markerne) + 0,10 skvulp = 1,61 m, risiko ca. 30 %</td></tr>
+        <tr><td>Model Stubberup</td><td class="n tw">1,64 lagune + 0,02 skvulp = 1,66 m ved huset, risiko ca. 44 %</td></tr>
         <tr><td>Model Nysted</td><td class="n tw">1,64 m (øjenvidne ca. 1,5 m), havnen under vand</td></tr>
         <tr><td>Statistisk model (Gedser)</td><td class="n tw">1,78 m med alle data, 1,46 m trænet uden 2023</td></tr>
-        <tr><td>Iagttaget Stubberup</td><td class="n tw">Vand på markerne og i haven, ikke ved huset</td></tr>
+        <tr><td>Iagttaget Stubberup</td><td class="n tw">Vand på markerne og i haven, mere end 15 m fra huset</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -842,7 +842,7 @@ a{color:var(--sea)}
 <script>
 (function(){
 "use strict";
-const G=9.81, A=0.36, B=0.0027, CS=0.8, D0=1.5, HUS=1.70, KM=0.6, ZSPAN=0.60, HAVN_D=1.0, HAVN_LIM=0.80;
+const G=9.81, A=0.36, B=0.0027, CS=0.8, D0=1.5, HUS=1.70, HAVE=1.60, HAVN_D=1.0, HAVN_LIM=0.80;  // koter fra Danmarks Højdemodel (v22)
 const SITES={S:{tk:120,k:1,fetch:d=>(d>=135&&d<=255)?8000:1000},N:{tk:105,k:1.0,fetch:d=>(d>=60&&d<=240)?1500:500}};
 const PH={1:{lead:120,name:"Fase 1: Opfyldning"},2:{lead:48,name:"Fase 2: Egensvingning"},3:{lead:12,name:"Fase 3: Vindstuvning"}};
 const SM={beta:[0.1266, 0.1697, 0.5575, 0.0099, -0.007, -0.0315, -0.0494, -0.1025, -0.0787, 0.0043, -0.0011, 0.0392, 0.0427, -0.1119, -0.0215, -0.0087, -0.1198, 0.0174, -0.0392, 0.0296, 0.0401, -0.0642, -0.1201, 0.0758, -0.0181, 0.0275, 0.0357, -0.0122, -0.0194, 0.0328, 0.0038, 0.0141, 0.0465, -0.1297, 0.1457, -0.0698, 0.004, -0.06, 0.0753, -0.0624, 0.059, -0.1461, 0.201, -0.0389, -0.0284, 0.0365, 0.079, -1.6417, 2.2129, 0.2288, 0.4043, -0.0691],cf:{feh:0.873,ark:0.950,bor:0.919,got:0.995},lags:{feh:[0,6],ark:[0,6,12],bor:[0,6,12,24],got:[6,12,24,36,48]},pos:[["feh",0],["ark",0],["bor",6],["got",12]],dirs:[0,45,90,135],cub:[["feh",0,100],["feh",0,60],["ark",0,60],["bor",6,40],["got",12,20]],sites:[["feh",54.55,11.50],["ark",54.9,13.5],["bor",55.5,15.5],["got",57.5,19.5]]};
@@ -877,8 +877,7 @@ function model(p,key){
   let w=B*p.u*p.u*c*s.k; const off=c<0; if(off) w*=0.3;
   const bas=A*p.fb, still=(p.still&&p.still[key]!=null)?p.still[key]:p.basis+bas+w;
   let eff=still;
-  if(key==="S"){const Z=p.zM; if(still>Z+ZSPAN) eff=Z+ZSPAN*KM+(still-Z-ZSPAN); else if(still>Z) eff=Z+(still-Z)*KM;}
-  const W=hs(p.u,p.dir,eff,s); let sk=CS*W.h; if(key==="S") sk=Math.min(sk,0.5*Math.max(0,eff-p.zM)); const tot=eff+sk;
+  const W=hs(p.u,p.dir,eff,s); let sk=CS*W.h; if(key==="S") sk=Math.min(sk,0.5*Math.max(0,eff-HAVE)); const tot=eff+sk;
   const thr=key==="S"?HUS:p.thrN, sig=(p.sigO!=null)?p.sigO:sigStat(p.lead);
   const ph1=Math.max(0,bas/thr*100), ph2=Math.max(0,(bas+p.basis)/thr*100);
   const P=key==="S"?pHus(still,p,s,thr,sig):pexc(still,thr,sig), PM=pexc(still,p.zM,sig), pIn=key==="S"?pHus(still,p,s,IND,sig):0;
@@ -886,11 +885,11 @@ function model(p,key){
 }
 function erfc(x){const z=Math.abs(x),t=1/(1+.5*z),r=t*Math.exp(-z*z-1.26551223+t*(1.00002368+t*(.37409196+t*(.09678418+t*(-.18628806+t*(.27886807+t*(-1.13520398+t*(1.48851587+t*(-.82215223+t*.17087277)))))))));return x>=0?r:2-r}
 function pexc(level,thr,sig){return 100*0.5*erfc((thr-level)/(sig*Math.SQRT2))}
-// Vandstand ved huset (stillevand efter markerne + skvulp) for en given vandstand i lagunen.
-function husNiv(L,p,s){const Z=p.zM;let e=L;if(L>Z+ZSPAN)e=Z+ZSPAN*KM+(L-Z-ZSPAN);else if(L>Z)e=Z+(L-Z)*KM;const sk=Math.min(CS*hs(p.u,p.dir,e,s).h,0.5*Math.max(0,e-Z));return e+sk}
-// Usikkerhed: prognosen (sig) og lagunens afstand til Gedser/DKSS (SIG_LAG) regnes i lagunen og føres gennem markerne;
-// de lokale led (koter for sokkel og dør, markernes kote, dæmpning, skvulp) lægges til ved huset (SIG_LOK).
-const SIG_LAG=0.10, SIG_LOK=0.12, IND=2.10;
+// Vandstand ved huset (stillevand = lagunen, skvulp brydes i haven) for en given vandstand i lagunen.
+function husNiv(L,p,s){const sk=Math.min(CS*hs(p.u,p.dir,L,s).h,0.5*Math.max(0,L-HAVE));return L+sk}
+// Usikkerhed: prognosen (sig) og lagunens afstand til Gedser/DKSS (SIG_LAG) regnes i lagunen;
+// terrænets nøjagtighed og skvulpet lægges til ved huset (SIG_LOK).
+const SIG_LAG=0.10, SIG_LOK=0.06, IND=2.10;
 const GH=(()=>{const z=[],w=[];for(let i=-40;i<=40;i++){const x=i/10;z.push(x);w.push(Math.exp(-x*x/2))}const s=w.reduce((a,b)=>a+b,0);return {z,w:w.map(v=>v/s)}})();
 function pHus(L,p,s,thr,sig){const sL=Math.sqrt(sig*sig+SIG_LAG*SIG_LAG);let P=0;for(let i=0;i<GH.z.length;i++){P+=GH.w[i]*0.5*erfc((thr-husNiv(L+sL*GH.z[i],p,s))/(SIG_LOK*Math.SQRT2))}return 100*P}
 // Prognosefejl uden ensemble: modellens egen fejl 0,15 m plus vejrprognosens fejl, målt pr. ledetid på arkiverede ECMWF-prognoser 2024 til 2026 (kalibrering v21).
@@ -1011,7 +1010,7 @@ function calc(){
     ?(hv>0?`Vandet står ${f(hv)} m i havnen. Slæk fortøjningerne og løsn stropperne, så bådene kan følge vandet op.`
           :`Vanddybden i havnen er nede på ca. ${n(depth)} m (normalt 1 m). Slæk fortøjningerne og løsn stropperne, så bådene ikke hænger i dem.`)
     :`Havnen står ${f(hv)} m, vanddybde ca. ${n(depth)} m. Fortøjningerne slækkes ved ±0,80 m.`;
-  $("borge").innerHTML=`<b>Børge Leo-indeks:</b> risiko for vand på markerne <b>${Math.round(mS.mark)} %</b> (lagunen ventes ${f(mS.still)} m).`+(mS.still>=p.zM?`<span class="wet">Vand på markerne: Christian og Lene og salig Jørgen Herfort bor nu ud til vandet.</span>`:"")+`<span class="bl">Opkaldt efter Børge Leo, der har levet af fiskeri fra Stubberup og har set vandet løbe ud på markerne ved siden af huset ved ca. 1,30 m, før det når haven.</span>`;
+  $("borge").innerHTML=`<b>Børge Leo-indeks:</b> risiko for vand på markerne <b>${Math.round(mS.mark)} %</b> (lagunen ventes ${f(mS.still)} m).`+(mS.still>=p.zM?`<span class="wet">Vand på markerne: Christian og Lene og salig Jørgen Herfort bor nu ud til vandet.</span>`:"")+`<span class="bl">Opkaldt efter Børge Leo, der har levet af fiskeri fra Stubberup og har set vandet løbe ud på markerne ved siden af huset ved ca. 1,40 m, før det når huset.</span>`;
   }
   try{const r0=(mode==="live"&&live&&live.rows&&live.rows.length)?live.rows.reduce((a,r)=>Math.abs(r.lead)<Math.abs(a.lead)?r:a,live.rows[0]):null;drawHouse(r0?r0.S:mS)}catch(e){}
   const pos=v=>Math.min(100,Math.max(0,v))+"%";
@@ -1057,9 +1056,8 @@ stillevand = <span class="r">${f(m.still,3)} m</span>`:`stillevand = basis + bas
            = ${f(p.basis)} ${f(m.bas,3).replace(/^\+/,"+ ").replace(/^−/,"− ")} ${f(m.w,3).replace(/^\+/,"+ ").replace(/^−/,"− ")}
            = <span class="r">${f(m.still,3)} m</span>`;
   $("m4b").innerHTML=site==="N"?`<span class="c"># Nysted: ingen marker, ved kysten = stillevand = ${f(m.still)} m</span>`:
-`Z = ${n(p.zM)} m   (markerne)        lagunen = ${f(m.still)} m
-${m.still<=p.zM?`lagunen under Z → ved huset = ${f(m.eff)} m`:m.still<=p.zM+ZSPAN?`ved huset = Z + (lagune − Z) · 0,6
-          = ${n(p.zM)} + (${n(m.still)} − ${n(p.zM)}) · 0,6 = <span class="r">${f(m.eff)} m</span>`:`markerne fulde → ved huset = Z + 0,36 + (lagune − Z − 0,60) = <span class="r">${f(m.eff)} m</span>`}
+`ved huset = lagunen = <span class="r">${f(m.eff)} m</span>   <span class="c"># haven går direkte ned til lagunen</span>
+haven 1,60 m · laveste terræn ved huset 1,70 m · markerne Z = ${n(p.zM)} m   <span class="c"># Danmarks Højdemodel</span>
 Børge Leo-indeks = P(lagune ≥ Z) = 1 − Φ((${n(p.zM)} − ${n(m.still)}) / ${n(m.sig)}) = <span class="r">${Math.round(m.mark)} %</span>`;
   $("m5").innerHTML=`<span class="c"># fetch: ${site==="S"?(m.W.F>=8000?"vind fra syd–sydvest, 8 km lagune":"vind fra øst–sydøst eller land, 1 km"):(m.W.F>=1500?"vind over noret, 1,5 km":"kort fetch, 0,5 km")}</span>
 d  = d₀ + vandstand = 1,5 ${f(m.eff).replace(/^\+/,"+ ").replace(/^−/,"− ")} = ${n(m.W.d)} m
@@ -1068,7 +1066,7 @@ A  = 0,53 · (g·d/U²)^0,75     = ${n(m.W.a,3)}
 B  = 0,00565 · (g·F/U²)^0,5   = ${n(m.W.b,3)}
 Hs = 0,283 · U²/g · tanh(A) · tanh(B / tanh(A))
    = <span class="s">${n(m.W.h,3)} m</span>
-skvulp = 0,80 · Hs, ved huset højst ½ · vanddybden på markerne = <span class="s">${f(m.sk,3)} m</span>`;
+skvulp = 0,80 · Hs, ved huset højst ½ · vanddybden i haven (1,60 m) = <span class="s">${f(m.sk,3)} m</span>`;
   $("m6").innerHTML=`ved huset = vandstand + skvulp = ${f(m.eff)} ${f(m.sk).replace(/^\+/,"+ ")} = <span class="r">${f(m.tot)} m</span>
 σ          = ${p.sigO!=null?"(fra live-prognosen)":`√(0,15² + vækst(${p.lead} t)²)`} = ${n(m.sig)} m     <span class="c"># prognoseusikkerhed vokser med tiden</span>
 ${site==="S"?`σ lagune   = √(σ² + 0,10²) = ${n(Math.sqrt(m.sig*m.sig+.01))} m       <span class="c"># afstanden fra Gedser til lagunen er ikke målt</span>
@@ -1106,7 +1104,7 @@ function drawChart(){
   TS.filter((_,i)=>i%4===0).forEach(r=>{h+=`<g transform="translate(${x(r[0])} ${wy0+14}) rotate(${r[2]})"><line x1="0" y1="-6" x2="0" y2="5" stroke="var(--wind)" stroke-width="1.6"/><path d="M-3,2 L0,7 L3,2 Z" fill="var(--wind)"/></g>`});
   h+=`<text x="${L-6}" y="${wy0-40}" font-size="11" fill="var(--wind)" text-anchor="end">20</text><line x1="${L}" x2="${W-R}" y1="${wy0-40}" y2="${wy0-40}" stroke="var(--wind)" stroke-dasharray="2 4" opacity=".5"/>`;
   // modeltop
-  const ip=225; h+=`<circle cx="${x(ip)}" cy="${y(1.61)}" r="6" fill="var(--crit)"/><text x="${x(ip)-10}" y="${y(1.61)-10}" font-size="12" fill="var(--crit)" text-anchor="end">model ved huset 1,61, 30 %</text>`;
+  const ip=225; h+=`<circle cx="${x(ip)}" cy="${y(1.66)}" r="6" fill="var(--crit)"/><text x="${x(ip)-10}" y="${y(1.66)-10}" font-size="12" fill="var(--crit)" text-anchor="end">model ved huset 1,66, 44 %</text>`;
   // dato-akse
   for(let d=0;d<10;d++){h+=`<text x="${x(d*24+12)}" y="${H-4}" font-size="11" fill="var(--muted)" text-anchor="middle">${12+d}.</text>`}
   h+=`<text x="${L}" y="${H-4}" font-size="11" fill="var(--muted)" text-anchor="end">okt.</text>`;
@@ -1305,7 +1303,7 @@ function renderTime(m,mS,mN,p){
     $("moorTxt").textContent=`Havnen holder sig inden for ±0,80 m de næste 7 døgn (yderst ${f(ex.N.still)} m ${fmtT(ex.t)}).`+(live.gNow!=null?` Gedser står ${f(live.gNow)} m nu.`:"");
   }
   const mk=rows.reduce((a,r)=>r.S.mark>a.S.mark?r:a,rows[0]);
-  $("borge").innerHTML=`<b>Børge Leo-indeks:</b> risiko for vand på markerne <b>${Math.round(mk.S.mark)} %</b> (højest ${fmtT(mk.t)}).`+(mk.S.mark>=50?`<span class="wet">Ventes vand på markerne: Christian og Lene og salig Jørgen Herfort bor nu ud til vandet.</span>`:"")+`<span class="bl">Opkaldt efter Børge Leo, der har levet af fiskeri fra Stubberup og har set vandet løbe ud på markerne ved siden af huset ved ca. 1,30 m, før det når haven.</span>`;
+  $("borge").innerHTML=`<b>Børge Leo-indeks:</b> risiko for vand på markerne <b>${Math.round(mk.S.mark)} %</b> (højest ${fmtT(mk.t)}).`+(mk.S.mark>=50?`<span class="wet">Ventes vand på markerne: Christian og Lene og salig Jørgen Herfort bor nu ud til vandet.</span>`:"")+`<span class="bl">Opkaldt efter Børge Leo, der har levet af fiskeri fra Stubberup og har set vandet løbe ud på markerne ved siden af huset ved ca. 1,40 m, før det når huset.</span>`;
   const gTop=rows.reduce((a,r)=>isNaN(r.g)?a:Math.max(a,r.g),-9);
   const best=key=>{let b=null;rows.forEach(r=>{const m=r[key];if(m&&(!b||m[k].idx>b.m[k].idx||(m[k].idx===b.m[k].idx&&m[k].tot>b.m[k].tot)))b={r,m}});return b};
   const bD=best("dkM"), bS=best("stM"); $("twoM").hidden=false;
@@ -1348,7 +1346,7 @@ document.getElementById("seeRisk").addEventListener("click",()=>goTo(".hero"));
 document.getElementById("seeHouse").addEventListener("click",()=>goTo("#houseSvg"));
 document.getElementById("seeStorm").addEventListener("click",()=>goTo("#scen"));
 const SNAME={"1872":"Stormfloden 13. november 1872","1913":"Stormfloden 31. december 1913",okt23:"Stormfloden 20. oktober 2023","1954":"Stormfloden 4. januar 1954","2017":"Stormfloden 4. januar 2017",okt23_50:"Stormfloden 2023 om 50 år (ca. 2075)"};
-const SFACT={"1872":"Det skete: vand i Nysted og ved Stubberup, over 3 m.","1913":"Det skete: ingen kendte beretninger om vand ved huset.",okt23:"Det skete: vand på markerne og i haven, ikke ved huset.","1954":"Det skete: ingen kendte beretninger om vand ved huset.","2017":"Det skete: Nysted havn over kajkanten, ingen beretninger om vand ved huset.",okt23_50:"Fremtidsscenarie, ikke sket."};
+const SFACT={"1872":"Det skete: vand i Nysted og ved Stubberup, over 3 m.","1913":"Det skete: ingen kendte beretninger om vand ved huset.",okt23:"Det skete: vand på markerne og i haven, mere end 15 m fra huset.","1954":"Det skete: ingen kendte beretninger om vand ved huset.","2017":"Det skete: Nysted havn over kajkanten, ingen beretninger om vand ved huset.",okt23_50:"Fremtidsscenarie, ikke sket."};
 function markScen(k){curScen=k;document.querySelectorAll("#scen button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.s===k?"true":"false"))}
 document.querySelectorAll("#scen button").forEach(b=>b.addEventListener("click",()=>{const s=S[b.dataset.s];Object.keys(s).forEach(k=>$(k).value=s[k]);markScen(b.dataset.s);phase=3;toSim();calc();drawPhase()}));
 $("flowHero").addEventListener("click",e=>{const b=e.target.closest("button[data-p]");if(!b)return;phase=+b.dataset.p;drawPhase();calc()});
