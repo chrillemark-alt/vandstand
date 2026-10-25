@@ -1163,7 +1163,7 @@ async function fetchLive(force){
   const uS="https://opendata-download-ocobs.smhi.se/api/version/1.0/parameter/6/station/2069/period/latest-day/data.csv";
   // Data hentet af serveren (GitHub, hver time) bruges, når de er under 90 minutter gamle; ellers hentes direkte.
   let SC=null;try{const ac=new AbortController(),to=setTimeout(()=>ac.abort(),8000);const r=await fetch("data/latest.json?t="+Math.floor(Date.now()/600e3),{signal:ac.signal});clearTimeout(to);if(r.ok)SC=JSON.parse(await r.text())}catch(e){}
-  const fra=(k,fn)=>(SC&&SC.raw&&SC.raw[k]&&SC.at&&SC.at[k]&&Date.now()-SC.at[k]<90*60e3)?Promise.resolve({raw:SC.raw[k],at:SC.at[k]}):fn();
+  const fra=(k,fn)=>(!force&&SC&&SC.raw&&SC.raw[k]&&SC.at&&SC.at[k]&&Date.now()-SC.at[k]<90*60e3)?Promise.resolve({raw:SC.raw[k],at:SC.at[k]}):fn();
   const [rW,rG,rH,rE,rD,rS,rX]=await Promise.allSettled([fra("W",()=>scrape(mcp,uW,force)),fra("G",()=>scrape(mcp,uG,force)),fra("H",()=>scrape(mcp,uH,force)),fra("E",()=>scrape(mcp,uE,force)),fra("D",()=>scrape(mcp,uD,force)),fra("S",()=>scrape(mcp,uS,force)),fra("X",()=>direct(uX,force))]);
   if(rW.status!=="fulfilled") return noLive(errText(rW.reason));
   const L={notes:[],at:rW.value.at};
@@ -1258,7 +1258,7 @@ function updateBar(){
   if(mode==="live"&&live){
     const age=(Date.now()-live.at)/60e3, end=live.wind[live.wind.length-1].t;
     const meta=`Data kl. ${fmtHM(new Date(live.at))}`+(live.dk?", DMI's prognose":", egen model (DMI svarer ikke)")+(live.notes.length?", "+live.notes.join(", "):"");
-    if(age<=30) return setBar("live","LIVE",meta,"Opdater");
+    if(age<=90) return setBar("live","LIVE",meta,"Opdater");
     return setBar("stale","IKKE LIVE",meta+` (${Math.round(age)} min gammel)`,"Opdater");
   }
 }
